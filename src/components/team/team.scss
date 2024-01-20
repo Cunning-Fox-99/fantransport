@@ -1,0 +1,78 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 100px;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  &__cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+
+    img {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      margin-bottom: 7px;
+      color: #252A34;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    span {
+      font-size: 14px;
+      color: #343434;
+    }
+  }
+
+  &__card-text {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 860px) {
+
+  .team {
+
+    &__cards-wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      margin-bottom: 20px;
+      width: 45%;
+    }
+
+  }
+
+}
+
+@media (max-width: 540px) {
+
+  .team {
+
+    &__card {
+      width: 100%;
+    }
+  }
+}
